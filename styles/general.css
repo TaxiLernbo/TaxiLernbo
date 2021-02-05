@@ -21,3 +21,9 @@ footer{
 .main{
     height: 100%;
 }
+div#menuHeader
+{
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+}
