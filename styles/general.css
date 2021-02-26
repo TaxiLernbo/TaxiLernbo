@@ -13,23 +13,28 @@
   
   li a{
     text-decoration:none;
-    color:#ADEFD1FF;
+    color: #1864a3;
   }
   .nav{
       display: flex;
   }
   .leftNav{
-    background-color: #00203FFF;
-    width: 25%;
+    background-color: #f9ff3e;
+    width: 15%;
   }
   .rightNav{
-    background-color:#00203FFF;
+    background-color:#f9ff3e;
     flex: 1;
-    width: 75%;
+    width: auto;
+    padding-left: 11em;
+    padding-top: 0.4em;
+  }
+  .rightNav a{
+    font-size: 4em;
   }
   ul{
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: row;
       list-style: none;
   }
   ul li{
@@ -50,9 +55,9 @@
       height: 25vh;
   }
   img.menuLogo{
-      height: 2em;
-      width: 2em;
-      margin-left: 40%;
+      height: 7em;
+      width: 10em;
+      margin-left: 1%;
       padding-top: 0.5em;
   }
 
