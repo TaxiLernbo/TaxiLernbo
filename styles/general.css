@@ -39,6 +39,7 @@
   .content{
       width: auto;
       height: 75vh;
+      
   }
   #main{
       height: 100%;
@@ -48,9 +49,28 @@
       width: 100%;
       height: 25vh;
   }
-  img{
+  img.menuLogo{
       height: 2em;
       width: 2em;
       margin-left: 40%;
       padding-top: 0.5em;
+  }
+
+  img.bookingImg
+  {
+      height: 25%;
+      width: 50%;
+  }
+  div.bookingFormBox
+  {
+      align-items: center;
+      background-color: white;
+      height: auto;
+      width: 50%;
+      margin: auto;
+      color: black;
+  }
+  form#bookingForm
+  {
+      text-align: center;
   }
