@@ -132,3 +132,67 @@ input#bookingFormSubmit:active
 {
   outline: none;
 }
+
+input#startPos
+{
+  height: 2.5em;
+  width: 30vw;
+  background-color: white;
+  font-size: 1em;
+  color: #000000;
+  padding-left: 0.7em;
+  border-radius: 0.5em;
+  border: black solid;
+}
+
+input#startPos:focus
+{
+  outline: none;
+}
+input#startPos:active
+{
+  outline: none;
+}
+
+input#destination
+{
+  height: 2.5em;
+  width: 30vw;
+  background-color: white;
+  font-size: 1em;
+  color: #000000;
+  padding-left: 0.7em;
+  border-radius: 0.5em;
+  border: black solid;
+}
+
+input#destination:focus
+{
+  outline: none;
+}
+input#destination:active
+{
+  outline: none;
+}
+
+textarea.customerDescription
+{
+  height: 1.5em;
+  width: 30vw;
+  background-color: white;
+  font-size: 1.25em;
+  color: #000000;
+  padding: 0.2em;
+  border-radius: 0.5em;
+  border: black solid;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+textarea.customerDescription:focus
+{
+  outline: none;
+}
+textarea.customerDescription:active
+{
+  outline: none;
+}
