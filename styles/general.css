@@ -4,6 +4,7 @@
   }
   body{
       height: 100vh;
+    color: #3d3c59;
   }
   
   html, body {
@@ -13,10 +14,13 @@
   
   li a{
     text-decoration:none;
-    color: #1864a3;
   }
   .nav{
       display: flex;
+      margin-bottom: 1em;
+  }
+  .mobileMenu{
+    display: none;
   }
   .leftNav{
     background-color: #f9ff3e;
@@ -195,4 +199,33 @@ textarea.customerDescription:focus
 textarea.customerDescription:active
 {
   outline: none;
+}
+@media screen and (max-width: 425px){
+  .leftNav{
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .rightNav{
+    width: 0;
+    height: 0;
+    display: none;
+  }
+.mobileMenu{
+  display: block;
+  height: 4em;
+  padding-left: 45vw;
+  padding-top: 2.5em;
+  width: 100%;
+  background-color: #f9ff3e;	
+}
+.iframe{
+  width: 70vw;
+  height: 20em;
+}
+div.bookingFormBox{
+  margin-left: 15vw;
+  margin-right: 15vw;
+  width: auto;
+} 
 }
