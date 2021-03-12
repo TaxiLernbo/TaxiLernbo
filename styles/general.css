@@ -4,7 +4,7 @@
   }
   body{
       height: 100vh;
-    color: #3d3c59;
+    
   }
   
   html, body {
@@ -28,13 +28,16 @@
     padding-right: 11vh;
   }
   .rightNav{
+    
     background-color:#f9ff3e;
     flex: 1;
     width: auto;
     padding-top: 0.4em;
+    text-shadow: -1px -1px 0 #D4D4D9, 1px -1px 0 #D4D4D9, -1px 1px 0 #D4D4D9, 1px 1px 0 #D4D4D9;
   }
   .rightNav a{
-    font-size: 4vw;
+    color: #3D3C59;
+    font-size: 2vw;
   }
   ul{
       display: flex;
