@@ -21,16 +21,16 @@
   .leftNav{
     background-color: #f9ff3e;
     width: 15%;
+    padding-right: 11vh;
   }
   .rightNav{
     background-color:#f9ff3e;
     flex: 1;
     width: auto;
-    padding-left: 11em;
     padding-top: 0.4em;
   }
   .rightNav a{
-    font-size: 4em;
+    font-size: 4vw;
   }
   ul{
       display: flex;
@@ -43,11 +43,14 @@
   }
   .content{
       width: auto;
-      height: 75vh;
+      height: auto;
       
   }
   #main{
       height: 100%;
+  }
+  #map {
+    height: 100%;
   }
   .footer{
       background-color: black;
