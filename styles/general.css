@@ -62,6 +62,9 @@
   #map {
     height: 100%;
   }
+  iframe.iframe{
+    width: 100%;
+  }
   .footer{
       background-color: black;
       width: 100%;
@@ -248,7 +251,7 @@ div.bookingFormBox{
 .leftNav{
   padding-left: 1vw;
 }
-ul li{
+ul li{  
   padding-left: 1vw;
 }
 }
