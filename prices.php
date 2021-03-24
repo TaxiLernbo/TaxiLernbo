@@ -11,17 +11,22 @@
 
 <body>
     <nav class="nav">
+        <div class="mobileMenu">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="leftNav">
-            <a href="index.htm"><img class="menuLogo"src="images/logga.png" alt="logo"></a>
+            <div class="headerImg">
+                <a href="index.php"><img class="menuLogo"src="images/logga.png" alt="logo"></a>
+            </div>
         </div>
         <div class="rightNav">
             <ul>
             
      <!--        <li><a href="booking.htm">Boka Oss</a></li>    -->
-            
-            <li><a href="info.htm">Om oss</a></li>
-            <li><a href="prices.htm">Priser</a></li>
-            <li><a href="areas.htm">Våra områden</a></li>
+            <li><a href="index.php">Startsida</a></li>
+            <li><a href="info.php">Om oss</a></li>
+            <li><a href="prices.php">Priser</a></li>
+            <li><a href="areas.php">Våra områden</a></li>
             </ul>
         </div>  
     </nav>

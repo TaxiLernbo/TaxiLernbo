@@ -5,29 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taxi Lernbo</title>
     <link rel="stylesheet" href="styles/general.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
 </head>
 
 <body>
     <nav class="nav">
+        <div class="mobileMenu">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="leftNav">
-            <a href="index.htm"><img class="menuLogo"src="images/logga.png" alt="logo"></a>
+            <div class="headerImg">
+                <a href="index.php"><img class="menuLogo"src="images/logga.png" alt="logo"></a>
+            </div>
         </div>
         <div class="rightNav">
             <ul>
             
      <!--        <li><a href="booking.htm">Boka Oss</a></li>    -->
-            
-            <li><a href="info.htm">Om oss</a></li>
-            <li><a href="prices.htm">Priser</a></li>
-            <li><a href="areas.htm">Våra områden</a></li>
+            <li><a href="index.php">Startsida</a></li>
+            <li><a href="info.php">Om oss</a></li>
+            <li><a href="prices.php">Priser</a></li>
+            <li><a href="areas.php">Våra områden</a></li>
             </ul>
         </div>  
     </nav>
     <div class="content">
         <div id="main">
-            <h1> OM OSS</h1>
+            <h1> VÅRA OMRÅDEN</h1>
 
         </div>
     </div>
@@ -54,5 +60,6 @@
       
 </body>
 <script src="scripts/tools.js"></script>
+
 
 </html>
