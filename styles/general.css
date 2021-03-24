@@ -206,7 +206,7 @@ textarea.customerDescription:active
 {
   outline: none;
 }
-@media screen and (max-width: 425px){
+@media screen and (max-width: 500px){
   .leftNav{
     width: 0;
     height: 0;
@@ -234,4 +234,21 @@ div.bookingFormBox{
   margin-right: 15vw;
   width: auto;
 } 
+}
+@media screen and (min-width: 501px) and (max-width: 900px){
+.rightNav{
+ 
+}
+.nav{
+  flex-direction: column;
+}
+.rightNav a{
+  font-size: 3.5vw;
+}
+.leftNav{
+  padding-left: 1vw;
+}
+ul li{
+  padding-left: 1vw;
+}
 }
