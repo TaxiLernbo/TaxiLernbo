@@ -233,7 +233,23 @@ div.bookingFormBox{
   margin-left: 15vw;
   margin-right: 15vw;
   width: auto;
-} 
+}
+#footerContact
+{
+  padding-top: 5vw;
+  padding-left: 18.5vw;
+  font-size: small;
+}
+#footerLinks
+{
+  padding-top: 5vw;
+  padding-left: 0vw;
+  font-size: small;
+}
+.socialMedia
+{
+  padding-left: 3vw;
+}
 }
 @media screen and (min-width: 501px) and (max-width: 900px){
 .rightNav{
