@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
 require("include\header.php");
-
 renderHeader();
 ?>
     
