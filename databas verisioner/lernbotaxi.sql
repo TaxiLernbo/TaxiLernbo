@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 26, 2021 at 01:33 PM
+-- Generation Time: Mar 26, 2021 at 02:45 PM
 -- Server version: 10.5.8-MariaDB
 -- PHP Version: 7.4.4
 
@@ -33,15 +33,16 @@ CREATE TABLE `bookingform` (
   `endPos` varchar(255) NOT NULL,
   `date` date NOT NULL,
   `time` time NOT NULL,
-  `description` text NOT NULL
+  `name` varchar(747) NOT NULL,
+  `phone` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `bookingform`
 --
 
-INSERT INTO `bookingform` (`id`, `startPos`, `endPos`, `date`, `time`, `description`) VALUES
-(14, 'Lernbo', 'BorÃ¥s', '2021-03-27', '14:15:00', 'AMOGUS');
+INSERT INTO `bookingform` (`id`, `startPos`, `endPos`, `date`, `time`, `name`, `phone`) VALUES
+(14, 'Lernbo', 'BorÃ¥s', '2021-03-27', '14:15:00', '', '');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +62,7 @@ ALTER TABLE `bookingform`
 -- AUTO_INCREMENT for table `bookingform`
 --
 ALTER TABLE `bookingform`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
