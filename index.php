@@ -50,20 +50,23 @@ $bookingForm->validateAndInsertForm();
                       &q=Lernbo+SW">
                   </iframe><br/><br/>
 
-                <label for="startPos"></label><br/>
+                <label for="startPos">Din nuvarande position:</label><br/>
                 <input type="text" id="startPos" name="startPos" placeholder="Din nuvarande position:"/><br/><br/>
                 
                 <label for="endPos"></label><br/>
                 <input type="text" id="endPos" name="endPos" placeholder="Din önskade destination:"/><br/><br/>
 
-                <label for="date"></label><br/>
-                <input type="date" id="date" name="date" /><br/><br/>
+                <label for="date">Önskad tid:</label><br/>
+                <input type="date" id="date" name="date" />
 
-                <label for="time"></label><br/>
+                <label for="time"></label>
                 <input type="time" id="time" name="time"/><br/><br/>
 
-                <label for="description">Kort beskrivning av dig som bokar för igenkänning på plats:</label><br/>
-                <input type="text" id="description" name="description"/></input><br/><br/>
+                <label for="name">Ditt namn och mobilnummer:</label><br/>
+                <input type="text" id="name" name="name" placeholder="För och efternamn:"/>
+
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" placeholder="+46-12-345-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br/><br/>
 
                 <input type="submit" id="bookingFormSubmit" value="Boka"/><br/><br/>
                 </form>
