@@ -2,11 +2,36 @@
 
 require_once("include/CApp.php");
 
+class CBookingForm{
+
+    public function __construct(CApp &$app){
+        $this->m_app = $app;
+    }
+    private function insert(array $data)
+    {	
+
+        $this->m_app->db()->insert("bookingform", $data);
+    }
+    public function validateAndInsertForm()
+    {
+        if(empty($_POST))
+        return;
+
+        $data = $_POST;
+        print_r_pre($_POST);
+        $this->insert($_POST);
+        ///////VIKIGT LÅT STÅ UNDER INSERT FUNKTION, ANNARS DÅ JÄVLAR/////////
+        Header('Location: ' .$_SERVER['PHP_SELF']);
+    }
+    private $m_app = null;
+};
+$bookingForm = new CBookingForm($app);
 ?>
 <!DOCTYPE html>
 <?php
-require("include\header.php");
+require_once("include\header.php");
 renderHeader();
+$bookingForm->validateAndInsertForm();
 ?>
     
     <div class="content">
@@ -14,7 +39,7 @@ renderHeader();
             <h1> INDEX</h1>
             <div class="bookingFormBox">
                 
-                <form id="bookingForm" method="post">
+                <form  method="post" id="bookingForm">
                     <iframe class="iframe"
                     width="600"
                     height="450"
@@ -25,11 +50,11 @@ renderHeader();
                       &q=Lernbo+SW">
                   </iframe><br/><br/>
 
-                <label for="StartPos"></label><br/>
+                <label for="startPos"></label><br/>
                 <input type="text" id="startPos" name="startPos" placeholder="Din nuvarande position:"/><br/><br/>
                 
-                <label for="EndPos"></label><br/>
-                <input type="text" id="destination" name="destination" placeholder="Din önskade destination:"/><br/><br/>
+                <label for="endPos"></label><br/>
+                <input type="text" id="endPos" name="endPos" placeholder="Din önskade destination:"/><br/><br/>
 
                 <label for="date"></label><br/>
                 <input type="date" id="date" name="date" /><br/><br/>
@@ -38,24 +63,11 @@ renderHeader();
                 <input type="time" id="time" name="time"/><br/><br/>
 
                 <label for="description">Kort beskrivning av dig som bokar för igenkänning på plats:</label><br/>
-                <textarea class="description"></textarea><br/><br/>
+                <input type="text" id="description" name="description"/></input><br/><br/>
 
-                <input type="submit" id="bookingFormSubmit" name="bookingFormSubmit" value="Boka"/><br/><br/>
+                <input type="submit" id="bookingFormSubmit" value="Boka"/><br/><br/>
                 </form>
-                <?php
-                /*
-                class bookingForm
-                {
-                    private function insert(array $data)
-                    {	
-                        if(!empty(!$_POST))
-                        {
-                            $data = $_POST;
-                        }
-                        $this->m_app->db()->insert("bookingform", $data);
-                    }
-                }*/
-                ?>
+
             </div>
         </div>
     </div>

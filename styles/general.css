@@ -168,7 +168,7 @@ input#startPos:active
   outline: none;
 }
 
-input#destination
+input#endPos
 {
   height: 2.5em;
   width: 30vw;
@@ -180,11 +180,11 @@ input#destination
   border: black solid;
 }
 
-input#destination:focus
+input#endPos:focus
 {
   outline: none;
 }
-input#destination:active
+input#endPos:active
 {
   outline: none;
 }
