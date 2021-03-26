@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 24, 2021 at 10:55 AM
+-- Generation Time: Mar 26, 2021 at 01:33 PM
 -- Server version: 10.5.8-MariaDB
 -- PHP Version: 7.4.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `lernbotaxi`
+-- Database: `taxilernbo`
 --
 
 -- --------------------------------------------------------
@@ -29,12 +29,19 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `bookingform` (
   `id` int(11) NOT NULL,
-  `StartPos` varchar(255) NOT NULL,
-  `EndPos` varchar(255) NOT NULL,
+  `startPos` varchar(255) NOT NULL,
+  `endPos` varchar(255) NOT NULL,
   `date` date NOT NULL,
-  `time` time(6) NOT NULL,
+  `time` time NOT NULL,
   `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `bookingform`
+--
+
+INSERT INTO `bookingform` (`id`, `startPos`, `endPos`, `date`, `time`, `description`) VALUES
+(14, 'Lernbo', 'BorÃ¥s', '2021-03-27', '14:15:00', 'AMOGUS');
 
 --
 -- Indexes for dumped tables
@@ -54,7 +61,7 @@ ALTER TABLE `bookingform`
 -- AUTO_INCREMENT for table `bookingform`
 --
 ALTER TABLE `bookingform`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
