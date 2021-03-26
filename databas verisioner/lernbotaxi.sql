@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Värd: localhost
--- Tid vid skapande: 24 mars 2021 kl 10:46
--- Serverversion: 10.4.12-MariaDB
--- PHP-version: 7.4.4
+-- Host: localhost
+-- Generation Time: Mar 24, 2021 at 10:55 AM
+-- Server version: 10.5.8-MariaDB
+-- PHP Version: 7.4.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Databas: `lernbotaxi`
+-- Database: `lernbotaxi`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `bookingform`
+-- Table structure for table `bookingform`
 --
 
 CREATE TABLE `bookingform` (
@@ -32,25 +32,26 @@ CREATE TABLE `bookingform` (
   `StartPos` varchar(255) NOT NULL,
   `EndPos` varchar(255) NOT NULL,
   `date` date NOT NULL,
+  `time` time(6) NOT NULL,
   `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Index för dumpade tabeller
+-- Indexes for dumped tables
 --
 
 --
--- Index för tabell `bookingform`
+-- Indexes for table `bookingform`
 --
 ALTER TABLE `bookingform`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT för dumpade tabeller
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT för tabell `bookingform`
+-- AUTO_INCREMENT for table `bookingform`
 --
 ALTER TABLE `bookingform`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
