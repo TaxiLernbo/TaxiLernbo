@@ -1,3 +1,9 @@
+<?php
+
+require_once("include/CApp.php");
+
+?>
+
 <!DOCTYPE html>
 
 <head>
