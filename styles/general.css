@@ -27,7 +27,7 @@
     background-color: #f9ff3e;
     width: 15%;
     padding-right: 11vh;
-    padding-left: 8vh;
+    padding-left: 10vh;
   }
   .rightNav{
     
@@ -39,7 +39,7 @@
   }
   .rightNav a{
     color: #3D3C59;
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   ul{
       display: flex;
@@ -82,12 +82,13 @@
   padding-top: 3em;	
 }	
 .footerSections{	
-  width: 33%;	
+  width: 27%;	
   height: auto;	
 }	
 #footerLogos{	
   display: flex;	
   flex-direction: column;	
+  padding-left: 6vh;
 }	
 .socialMedia{	
   margin-left: 4.8em;	
@@ -246,7 +247,7 @@ div.bookingFormBox{
 #footerLinks
 {
   padding-top: 5vw;
-  padding-left: 0vw;
+  padding-left: 2.6vw;
   font-size: small;
 }
 .socialMedia
