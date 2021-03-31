@@ -321,9 +321,31 @@ textarea.customerDescription:active
   height: 20em;
 }
 div.bookingFormBox{
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   width: auto;
+}
+input#startPos{
+  width: 85vw;
+  margin-right: 0.7em;
+}
+input#endPos{
+  width: 85vw;
+  margin-right: 0.7em;
+}
+input#date{
+  width: 38vw;
+}
+input#time{
+  width: 38vw;
+  margin-right: 3vw;
+}
+input#name{
+  width: 38vw;
+}
+input#phone{
+  width: 38vw;
+  margin-right: 3vw;
 }
 .footerContent
 {
@@ -385,7 +407,11 @@ ul li{
   padding-left: 2.6vw;
   font-size: medium;
 }
-
+div.bookingFormBox{
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: auto;
+}
 .socialMedia
 {
   padding-left: 0vw;
