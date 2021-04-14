@@ -390,7 +390,7 @@ input#phone{
   font-size: 3.5vw;
 }
 .leftNav{
-  padding-left: 1vw;
+  padding-left: 13.5vw;
 }
 ul li{  
   padding-left: 1vw;
@@ -412,6 +412,7 @@ div.bookingFormBox{
   margin-right: 10vw;
   width: auto;
 }
+
 .socialMedia
 {
   padding-left: 0vw;
