@@ -66,7 +66,7 @@ $bookingForm->validateAndInsertForm();
                 <input type="text" id="name" name="name" placeholder="För och efternamn:"/>
 
                 <label for="phone"></label>
-                <input type="tel" id="phone" name="phone" placeholder="+46-12-345-678" pattern="^(([+]46)\s*(7)|07)[02369]\s*(\d{4})\s*(\d{3})$"><br/><br/>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-78-90" pattern="^(([+]46)\s*(7)|07)[02369]\s*(\d{4})\s*(\d{3})$"><br/><br/>
 
                 <input type="submit" id="bookingFormSubmit" value="Boka"/><br/><br/>
                 </form>

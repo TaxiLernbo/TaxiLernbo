@@ -41,13 +41,13 @@
     color: #3D3C59;
     font-size: 1.5vw;
   }
-  ul{
+  .nav ul{
       display: flex;
       flex-direction: row;
       list-style: none;
       padding-left: 4vh;
   }
-  ul li{
+  .nav ul li{
     margin:0.075em;
     padding:0.875em 2em;
   }
@@ -92,13 +92,53 @@
 }	
 .socialMedia{	
   margin-left: 4.8em;	
-  margin-top: 1em;	
-}	
+  margin-top: 0.5em;	
+}
+
 .footerLogo{	
   height: 7em;	
   width: 10em;	
   margin-left: 2em;	
 }	
+
+#footerContact
+{
+  padding-top: auto;
+  font-size: large;
+}
+
+#footerLinks
+{
+  padding-top: auto;
+  font-size: large;
+}
+
+h5
+{
+  text-decoration: underline;
+}
+
+#information, #links
+{
+  font-size: small;
+}
+
+#information li
+{
+  font-size: small;
+  list-style: none;
+  text-decoration: none;
+  padding-top: 0.4em;
+}
+
+#links li
+{
+  font-size: small;
+  list-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  padding-top: 0.4em;
+}
 
   img.menuLogo{
     height: auto;
