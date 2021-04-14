@@ -28,7 +28,7 @@ function renderFooter()
             <div id="links">
                 <ul>
                    <a style="text-decoration: none;" href="https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/skydda-dig-och-andra/rekommendationer-for-att-minska-spridningen-av-covid-19/"><li>Covid-19</li></a> 
-                    <li></li>
+                    <li>gul</li>
                     <li></li>
                 </ul>
             </div>
