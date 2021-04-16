@@ -190,7 +190,7 @@ input#bookingFormSubmit:active
 input#startPos
 {
   height: 2.5em;
-  width: 30vw;
+  width: 30.35vw;
   background-color: white;
   font-size: 1em;
   color: #000000;
@@ -211,7 +211,7 @@ input#startPos:active
 input#endPos
 {
   height: 2.5em;
-  width: 30vw;
+  width: 30.35vw;
   background-color: white;
   font-size: 1em;
   color: #000000;
@@ -229,10 +229,10 @@ input#endPos:active
   outline: none;
 }
 
-input#date
+input#time, input#date
 {
   height: 2.5em;
-  width: 14vw;
+  width: 13.65vw;
   background-color: white;
   font-size: 1em;
   color: #000000;
@@ -242,36 +242,43 @@ input#date
   padding-right: 2vh;
 }
 
-input#date:focus
+input#time:focus, input#date:focus
 {
   outline: none;
 }
 
-input#date:active
+input#time:active, input#date:active
 {
   outline: none;
 }
 
-input#time
+select#music, select#conversation
 {
   height: 2.5em;
-  width: 14vw;
+  width: 15.6vw;
   background-color: white;
   font-size: 1em;
   color: #000000;
   padding-left: 0.7em;
   border-radius: 0.5em;
   border: black solid;
+  padding-right: 2vh;
 }
-input#time:focus
+
+select#music:focus, select#conversation:focus
 {
   outline: none;
 }
 
-input#time:active
+select#music:active, select#conversation:active
 {
-  outline: none; 
+  outline: none;
 }
+
+
+
+
+
 
 input#name
 {
