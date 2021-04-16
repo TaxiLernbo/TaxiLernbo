@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 26, 2021 at 02:45 PM
+-- Generation Time: Apr 16, 2021 at 01:09 PM
 -- Server version: 10.5.8-MariaDB
 -- PHP Version: 7.4.4
 
@@ -42,7 +42,8 @@ CREATE TABLE `bookingform` (
 --
 
 INSERT INTO `bookingform` (`id`, `startPos`, `endPos`, `date`, `time`, `name`, `phone`) VALUES
-(14, 'Lernbo', 'BorÃ¥s', '2021-03-27', '14:15:00', '', '');
+(14, 'Lernbo', 'BorÃ¥s', '2021-03-27', '14:15:00', '', ''),
+(1001, 'Ludvika', 'BorlÃ¤nge', '2021-04-15', '00:01:00', 'Daniel Eriksson', '0739495425');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +63,7 @@ ALTER TABLE `bookingform`
 -- AUTO_INCREMENT for table `bookingform`
 --
 ALTER TABLE `bookingform`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1003;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
