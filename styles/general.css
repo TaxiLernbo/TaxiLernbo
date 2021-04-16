@@ -79,7 +79,7 @@
   .footerContent{	
   display: flex;	
   flex-direction: row;	
-  padding-top: 3em;	
+  padding-top: 1.5em;	
 }	
 .footerSections{	
   width: 27%;	
@@ -333,22 +333,29 @@ textarea.customerDescription:focus
 {
   outline: none;
 }
+
 textarea.customerDescription:active
 {
   outline: none;
 }
+
 @media screen and (max-width: 500px){
-  .leftNav{
+  .leftNav
+  {
     width: 0;
     height: 0;
     display: none;
   }
-  .rightNav{
+
+  .rightNav
+  {
     width: 0;
     height: 0;
     display: none;
   }
-.mobileMenu{
+
+.mobileMenu
+{
   display: block;
   height: 4em;
   padding-left: 45vw;
@@ -356,52 +363,86 @@ textarea.customerDescription:active
   width: 100%;
   background-color: #f9ff3e;	
 }
-.iframe{
+
+.iframe
+{
   width: 70vw;
   height: 20em;
 }
-div.bookingFormBox{
+
+div.bookingFormBox
+{
   margin-left: 1vw;
   margin-right: 1vw;
   width: auto;
 }
-input#startPos{
+
+input#startPos
+{
   width: 85vw;
   margin-right: 0.7em;
 }
-input#endPos{
+
+input#endPos
+{
   width: 85vw;
   margin-right: 0.7em;
 }
-input#date{
+
+input#date
+{
   width: 38vw;
 }
-input#time{
-  width: 38vw;
-  margin-right: 3vw;
-}
-input#name{
-  width: 38vw;
-}
-input#phone{
+
+input#time
+{
   width: 38vw;
   margin-right: 3vw;
 }
+
+input#name
+{
+  width: 38vw;
+}
+
+input#phone
+{
+  width: 38vw;
+  margin-right: 3vw;
+}
+
 .footerContent
 {
   padding-top: 0vh;
   align-items: center;
 }
-.footerSections{	
-  width: 20%;	
+
+.footerSections
+{	
   height: auto;	
 }	
+
+#footerLinks h5
+{	
+  font-size: small;
+}
+
 #footerContact
 {
   padding-top: auto;
   padding-left: 10.5vw;
-  font-size: x-small;
+  font-size: smaller;
+  padding-right: 8vw;
 }
+
+#footerContact li
+{
+/*   padding-top: 0.2vh;
+  padding-bottom: 0.6vh; */
+  font-size: x-small;
+  padding: 0.9vw;
+}
+
 #footerLinks
 {
   padding-top: auto;
@@ -414,47 +455,12 @@ input#phone{
   display: none;
 }
 
-.socialMedia
+#footerLogos
 {
-  
-}
-}
-@media screen and (min-width: 501px) and (max-width: 900px){
-.rightNav{
- 
-}
-.nav{
-  flex-direction: column;
-}
-.rightNav a{
-  font-size: 3.5vw;
-}
-.leftNav{
-  padding-left: 13.5vw;
-}
-ul li{  
-  padding-left: 1vw;
-}
-#footerContact
-{
-  padding-top: 5vw;
-  padding-left: 9vw;
-  font-size: medium;
-}
-#footerLinks
-{
-  padding-top: 5vw;
-  padding-left: 2.6vw;
-  font-size: medium;
-}
-div.bookingFormBox{
-  margin-left: 10vw;
-  margin-right: 10vw;
-  width: auto;
+  padding-left: 0vh;
 }
 
 .socialMedia
 {
-  padding-left: 0vw;
-}
+  padding-left: 0em;
 }
