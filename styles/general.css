@@ -275,11 +275,6 @@ select#music:active, select#conversation:active
   outline: none;
 }
 
-
-
-
-
-
 input#name
 {
   height: 2.5em;
@@ -398,23 +393,34 @@ input#endPos
 
 input#date
 {
-  width: 38vw;
+  width: 36vw;
 }
 
 input#time
 {
-  width: 38vw;
+  width: 36vw;
+  margin-right: 3vw;
+}
+
+select#music
+{
+  width: 43.5vw;
+}
+
+select#conversation
+{
+  width: 43.5vw;
   margin-right: 3vw;
 }
 
 input#name
 {
-  width: 38vw;
+  width: 37vw;
 }
 
 input#phone
 {
-  width: 38vw;
+  width: 37vw;
   margin-right: 3vw;
 }
 
@@ -427,6 +433,7 @@ input#phone
 .footerSections
 {	
   height: auto;	
+  width: 33%;
 }	
 
 #footerLinks h5
