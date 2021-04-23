@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 require_once("CDatabase.php");
 //require_once("CUser.php");

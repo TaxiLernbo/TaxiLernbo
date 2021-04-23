@@ -57,10 +57,10 @@ $bookingForm->validateAndInsertForm();
                 <input type="text" id="endPos" name="endPos" placeholder="Din önskade destination:"/><br/><br/>
 
                 <label for="date">Önskad tid:</label><br/>
-                <input type="date" id="date" name="date" />
+                <input type="date" id="date" name="date" value="<?php echo date('Y-m-d'); ?>"/>
 
                 <label for="time"></label>
-                <input type="time" id="time" name="time"/><br/><br/>
+                <input type="time" id="time" name="time" value="<?php echo date('H:i'); ?>"/><br/><br/>
                 
                 <label for="music">Musik och konversation:</label><br/>
 
