@@ -1,7 +1,7 @@
 <?php
 function renderFooter()
 {
-    echo('<footer class="footer">
+    echo('<footer class="footer" id="footer">
     <div class="footerContent">
         <div id="footerLogos" class="footerSections">
             <img class="footerLogo"src="images/logga.png" alt="footerLogo">

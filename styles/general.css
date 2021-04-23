@@ -346,6 +346,25 @@ textarea.customerDescription:active
   outline: none;
 }
 
+.main .mobileMenuWithLinks
+{
+  display: block;
+  height: 4em;
+  padding-left: 0;
+  padding-top: 0;
+  width: 100%;
+  background-color: #f9ff3e;	
+}
+
+.mobileMenuVisible
+{
+  display: block;
+}
+.mobileMenuHidden
+{
+  display: none;
+}
+
 @media screen and (max-width: 500px){
   .leftNav
   {
@@ -370,7 +389,23 @@ textarea.customerDescription:active
   width: 100%;
   background-color: #f9ff3e;	
 }
-
+.mobileMenuWithLinks
+{
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  padding-left: 0vw;
+  padding-top: 0em;
+  width: 100%;
+  background-color: #f9ff3e;	
+}
+.flexLinks{
+  display: flex;
+  flex-direction: column;
+}
 .iframe
 {
   width: 70vw;

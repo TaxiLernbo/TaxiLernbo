@@ -15,8 +15,16 @@ function renderHeader()
 
 <body>
     <nav class="nav">
-        <div class="mobileMenu">
-            <i class="fas fa-bars"></i>
+        <div class="mobileMenu" id="mobileMenu">
+            <i class="fas fa-bars" id="hamburger"></i>
+            <div id="mobileMenuLinks" class="mobileMenuHidden">
+            <div class="flexLinks">
+            <a href="index.php">Startsida</a>
+            <a href="info.php">Om oss</a>
+            <a href="prices.php">Priser</a>
+            <a href="areas.php">Våra områden</a>
+                   </div>
+            </div>
         </div>
         <div class="leftNav">
             <div class="headerImg">
