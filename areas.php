@@ -12,9 +12,9 @@ require_once("include/CApp.php");
 ?>
     <div class="content">
         <div id="main">
-            <h1> BOKNIGNAR </h1>
+            <h1> BOKNINGAR </h1>
             <div class="bookingFormBox">
-                <form  method="post" id="editBookingForm" action="bookings.php">
+                <form  method="get" id="editBookingForm" action="bookings.php">
 
                 <label for="name">Ditt bokningsnummber och mobilnummer:</label><br/>
                 <input type="text" id="bookingNumber" name="bookingNumber" placeholder="Bokningsnummer:"/>
@@ -24,7 +24,8 @@ require_once("include/CApp.php");
 
                 <input type="submit" id="bookingFormSubmit" value="Ändra"/><br/><br/>
                 <?php 
-               // $_GET["id"] = 1;
+
+                //$id = $_GET["bookingNumber"];
 
                 ?>
                 </form>

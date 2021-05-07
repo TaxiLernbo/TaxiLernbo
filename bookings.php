@@ -2,8 +2,9 @@
 
 require_once("include/CApp.php");
 
-if(!isset($_GET["id"]))
-    die("Felaltigt ID");
+$id = $_GET["bookingNumber"];
+
+$phone = $_GET["phone"];
 
 ?>  
 
@@ -17,8 +18,58 @@ if(!isset($_GET["id"]))
         <div id="main">
             <h1> Redigera din Bokning</h1>
             <?php
-            echo("Ditt ID är: ");
-            echo($_GET["id"])
+
+            //$phone = $_GET["phone"];
+
+            $server = "localhost";
+            $username = "root";
+            $password = "root";
+            $dbname = "taxilernbo";
+
+            $conn = new mysqli($server, $username, $password, $dbname);
+
+            if($conn->connect_error)
+            {
+                throw new Exception("Connection failed: " . $conn->connect_error);
+            }
+
+
+
+            $query = "SELECT * FROM bookingform WHERE id='$id' and phone='$phone'";
+            $result = $conn->query($query);
+
+            if($result === false)
+            {
+                throw new Exception("Query error: " . $conn->error);
+            }
+
+            if($result->num_rows > 0)
+            {
+                while($row = $result->fetch_assoc())
+                {
+                    echo("Ditt Bokningsnummer: " . $row["id"] . "<br>" .
+                    "Din Startposition: " . $row["startPos"] . "<br>" .
+                    "Din Destination: " . $row["endPos"] . "<br>" .
+                    "Datum: " . $row["date"] . "<br>" .
+                    "Tid: " . $row["time"] . "<br>" .
+                    "Musik: " . $row["music"] . "<br>" .
+                    "Konversation: " . $row["conversation"] . "<br>" .
+                    "Ditt Namn: " . $row["name"] . "<br>" .
+                    "Ditt Mobilnummer: " . $row["phone"] . "<br>" 
+  
+                    );
+                    //var_dump($row);
+                    /*
+                    echo("<pre>");
+                    print_r($row);
+                    echo("</pre>");
+                    */
+                }
+            }
+            else
+            {
+                echo("Det finns inget att visa");
+            }
             ?>
         </div>
     </div>
