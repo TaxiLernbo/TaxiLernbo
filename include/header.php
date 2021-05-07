@@ -22,7 +22,7 @@ function renderHeader()
             <a href="index.php">Startsida</a>
             <a href="info.php">Om oss</a>
             <a href="prices.php">Priser</a>
-            <a href="areas.php">Våra områden</a>
+            <a href="areas.php">Bokningar</a>
                    </div>
             </div>
         </div>
@@ -38,7 +38,7 @@ function renderHeader()
             <li><a href="index.php">Startsida</a></li>
             <li><a href="info.php">Om oss</a></li>
             <li><a href="prices.php">Priser</a></li>
-            <li><a href="areas.php">Våra områden</a></li>
+            <li><a href="areas.php">Bokningar</a></li>
             </ul>
         </div>  
     </nav>');

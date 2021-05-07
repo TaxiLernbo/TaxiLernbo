@@ -33,12 +33,10 @@ require_once("include\header.php");
 renderHeader();
 $bookingForm->validateAndInsertForm();
 ?>
-    
     <div class="content">
         <div id="main">
-            <h1> INDEX</h1>
+            <h1> Start</h1>
             <div class="bookingFormBox">
-                
                 <form  method="post" id="bookingForm">
                     <iframe class="iframe"
                     width="600"
