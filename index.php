@@ -35,9 +35,8 @@ $bookingForm->validateAndInsertForm();
 ?>
     <div class="content">
         <div id="main">
-            <h1> Start</h1>
             <div class="bookingFormBox">
-                <form  method="post" id="bookingForm">
+                <form  method="post" id="bookingForm" action="thanks.php">
                     <iframe class="iframe"
                     width="600"
                     height="450"
@@ -49,10 +48,10 @@ $bookingForm->validateAndInsertForm();
                   </iframe><br/><br/>
 
                 <label for="startPos"></label>
-                <input type="text" id="startPos" name="startPos" placeholder="Din nuvarande position:"/><br/><br/>
+                <input required="required" type="text" id="startPos" name="startPos" placeholder="Start position:"/><br/><br/>
                 
                 <label for="endPos"></label><br/>
-                <input type="text" id="endPos" name="endPos" placeholder="Din önskade destination:"/><br/><br/>
+                <input required="required" type="text" id="endPos" name="endPos" placeholder="Din önskade destination:"/><br/><br/>
 
                 <label for="date">Önskad tid:</label><br/>
                 <input type="date" id="date" name="date" value="<?php echo date('Y-m-d'); ?>"/>
@@ -90,10 +89,10 @@ $bookingForm->validateAndInsertForm();
 
 
                 <label for="name">Ditt namn och mobilnummer:</label><br/>
-                <input type="text" id="name" name="name" placeholder="För och efternamn:"/>
+                <input required="required" type="text" id="name" name="name" placeholder="För och efternamn:"/>
 
                 <label for="phone"></label>
-                <input type="tel" id="phone" name="phone" placeholder="123-456-78-90" pattern="^(([+]46)\s*(7)|07)[02369]\s*(\d{4})\s*(\d{3})$"><br/><br/>
+                <input required="required" type="tel" id="phone" name="phone" placeholder="123-456-78-90" pattern="^(([+]46)\s*(7)|07)[02369]\s*(\d{4})\s*(\d{3})$"><br/><br/>
 
                 <input type="submit" id="bookingFormSubmit" value="Boka"/><br/><br/>
                 </form>
