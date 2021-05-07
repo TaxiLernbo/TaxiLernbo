@@ -19,10 +19,10 @@ function renderHeader()
             <i class="fas fa-bars" id="hamburger"></i>
             <div id="mobileMenuLinks" class="mobileMenuHidden">
             <div class="flexLinks">
-            <a href="index.php">Startsida</a>
-            <a href="info.php">Om oss</a>
-            <a href="prices.php">Priser</a>
-            <a href="areas.php">Bokningar</a>
+            <a href="index.php"><li class="mobileLinks" >Startsida</li></a>
+            <a href="info.php"><li class="mobileLinks" >Om oss</li></a>
+            <a href="prices.php"><li class="mobileLinks" >Priser</li></a>
+            <a href="areas.php"><li class="mobileLinks" >Bokningar</li></a>
                    </div>
             </div>
         </div>
