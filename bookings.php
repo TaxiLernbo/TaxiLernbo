@@ -18,7 +18,7 @@ $phone = $_GET["phone"];
         <div id="main">
             <h1> Redigera din Bokning</h1>
             <?php
-
+    
             //$phone = $_GET["phone"];
 
             $server = "localhost";
@@ -42,7 +42,7 @@ $phone = $_GET["phone"];
             {
                 throw new Exception("Query error: " . $conn->error);
             }
-
+            
             if($result->num_rows > 0)
             {
                 while($row = $result->fetch_assoc())
@@ -56,8 +56,23 @@ $phone = $_GET["phone"];
                     "Konversation: " . $row["conversation"] . "<br>" .
                     "Ditt Namn: " . $row["name"] . "<br>" .
                     "Ditt Mobilnummer: " . $row["phone"] . "<br>" 
-  
                     );
+
+      
+                    if(isset($_POST['deleteBooking'])) {
+                        $query = "DELETE FROM bookingform WHERE id='$id' and phone='$phone'";
+                        $result = $conn->query($query);
+                        die("<br>" . "Din bokning har blivit raderad");
+                    }
+                ?>
+                  
+                <form method="post">   
+                    <br>
+                    <input type="submit" name="deleteBooking"
+                            value="Avboka"/>
+                </form> 
+                <br>
+                <?php
                     //var_dump($row);
                     /*
                     echo("<pre>");
