@@ -31,12 +31,17 @@ $bookingForm = new CBookingForm($app);
 <?php
 require_once("include\header.php");
 renderHeader();
-$bookingForm->validateAndInsertForm();
+if(!empty($_POST))
+{
+    $bookingForm->validateAndInsertForm();
+    redirect("thanks.php");
+    die();
+}
 ?>
     <div class="content">
         <div id="main">
             <div class="bookingFormBox">
-                <form  method="post" id="bookingForm" action="thanks.php">
+                <form  method="post" id="bookingForm">
                     <iframe class="iframe"
                     width="600"
                     height="450"
@@ -83,10 +88,6 @@ $bookingForm->validateAndInsertForm();
                 <option value="ingen konversation">ingen konversation</option>
                 <option value="konversation">konversation</option>
                 </select><br/><br/>
-
-
-
-
 
                 <label for="name">Ditt namn och mobilnummer:</label><br/>
                 <input required="required" type="text" id="name" name="name" placeholder="För och efternamn:"/>
