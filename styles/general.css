@@ -184,16 +184,7 @@ h5
   font-weight: bold;
   }
 
-input#bookingFormSubmit:focus
-{
-  outline: none;
-}
-input#bookingFormSubmit:active
-{
-  outline: none;
-}
-
-input#startPos
+input#startPos, input#endPos
 {
   height: 2.5em;
   width: 30.35vw;
@@ -205,37 +196,16 @@ input#startPos
   border: black solid;
 }
 
-input#startPos:focus
+input#bookingFormSubmit:focus, input#startPos:focus, input#endPos:focus, input#time:focus, input#date:focus, input#phone:focus, input#name:focus, select#music:focus, select#conversation:focus
 {
   outline: none;
 }
-input#startPos:active
-{
-  outline: none;
-}
-
-input#endPos
-{
-  height: 2.5em;
-  width: 30.35vw;
-  background-color: white;
-  font-size: 1em;
-  color: #000000;
-  padding-left: 0.7em;
-  border-radius: 0.5em;
-  border: black solid;
-}
-
-input#endPos:focus
-{
-  outline: none;
-}
-input#endPos:active
+input#bookingFormSubmit:active, input#startPos:active, input#endPos:active, input#time:active, input#date:active, input#phone:active, input#name:active, select#music:active, select#conversation:active
 {
   outline: none;
 }
 
-input#time, input#date
+input#time, input#date, input#phone, input#name
 {
   height: 2.5em;
   width: 13.65vw;
@@ -248,15 +218,6 @@ input#time, input#date
   padding-right: 2vh;
 }
 
-input#time:focus, input#date:focus
-{
-  outline: none;
-}
-
-input#time:active, input#date:active
-{
-  outline: none;
-}
 
 select#music, select#conversation
 {
@@ -271,89 +232,6 @@ select#music, select#conversation
   padding-right: 2vh;
 }
 
-select#music:focus, select#conversation:focus
-{
-  outline: none;
-}
-
-select#music:active, select#conversation:active
-{
-  outline: none;
-}
-
-input#name
-{
-  height: 2.5em;
-  width: 14vw;
-  background-color: white;
-  font-size: 1em;
-  color: #000000;
-  padding-left: 0.7em;
-  border-radius: 0.5em;
-  border: black solid;
-  padding-right: 2vh;
-}
-input#bookingNumber
-{
-  height: 2.5em;
-  width: 14vw;
-  background-color: white;
-  font-size: 1em;
-  color: #000000;
-  padding-left: 0.7em;
-  border-radius: 0.5em;
-  border: black solid;
-  padding-right: 2vh;
-}
-input#name:focus
-{
-  outline: none;
-}
-
-input#name:active
-{
-  outline: none; 
-}
-
-input#phone
-{
-  height: 2.5em;
-  width: 14vw;
-  background-color: white;
-  font-size: 1em;
-  color: #000000;
-  padding-left: 0.7em;
-  border-radius: 0.5em;
-  border: black solid;
-}
-.bookingGrid{
-  margin: 0.5em;
-  padding: 1em;
-  border-radius: 1em;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  grid-gap: 1em 1em;
-  background-color: #1864a3;
-}
-.gridItems{
-  grid-column: 1;
-  grid-row: auto;
-}
-.gridValues{
-  grid-column: 2;
-  grid-row: auto;
-}
-
-input#phone:focus
-{
-  outline: none;
-}
-
-input#phone:active
-{
-  outline: none; 
-}
 div#thankYouText
 {
   text-align: center;
@@ -555,4 +433,61 @@ li.mobileLinks
 div.flexLinks a
 {
   text-decoration: none;
+}
+}
+@media screen and (min-width: 500px) and (max-width: 750px){
+  
+  footer#footer
+  {
+   width: auto; 
+  }
+
+  div.leftNav
+  {
+    padding-right: 0vh;
+  }
+
+  div.rightNav
+  {
+    width: auto;
+  }
+
+  .nav ul
+  {
+    padding-left: 0vh;
+  }
+
+  #footerContact 
+  {
+      padding-left: 6.5vh;
+      padding-right: 1.5vh;
+      font-size: large;
+  }
+
+  input#time, input#date, input#phone, input#name
+{
+  height: 2.5em;
+  width: 13.65vw;
+  background-color: white;
+  font-size: 1em;
+  color: #000000;
+  padding-left: 0.7em;
+  border-radius: 0.5em;
+  border: black solid;
+  padding-right: 2vh;
+}
+
+
+select#music, select#conversation
+{
+  height: 2.5em;
+  width: 15.6vw;
+  background-color: white;
+  font-size: 1em;
+  color: #000000;
+  padding-left: 0.7em;
+  border-radius: 0.5em;
+  border: black solid;
+  padding-right: 2vh;
+}
 }
