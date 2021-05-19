@@ -56,7 +56,7 @@ if(!empty($_POST))
                 <input required="required" type="text" id="startPos" name="startPos" placeholder="Start position:"/><br/><br/>
                 
                 <label for="endPos"></label><br/>
-                <input required="required" type="text" id="endPos" name="endPos" placeholder="Din önskade destination:"/><br/><br/>
+                <input required="required" type="text" id="endPos" name="endPos" placeholder="Slut destination:"/><br/><br/>
 
                 <label for="date">Önskad tid:</label><br/>
                 <input type="date" id="date" name="date" value="<?php echo date('Y-m-d'); ?>"/>

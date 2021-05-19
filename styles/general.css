@@ -453,7 +453,7 @@ div.flexLinks a
   text-decoration: none;
 }
 }
-@media screen and (min-width: 500px) and (max-width: 750px){
+@media screen and (min-width: 500px){
   
   footer#footer
   {
@@ -463,6 +463,7 @@ div.flexLinks a
   div.leftNav
   {
     padding-right: 0vh;
+    padding-left: 5vh;
   }
 
   div.rightNav
@@ -482,10 +483,23 @@ div.flexLinks a
       font-size: large;
   }
 
+  
+input#startPos, input#endPos
+{
+  height: 2.5em;
+  width: 25vh;
+  background-color: white;
+  font-size: 1em;
+  color: #000000;
+  padding-left: 0.7em;
+  border-radius: 0.5em;
+  border: black solid;
+}
+
   input#time, input#date, input#phone, input#name
 {
   height: 2.5em;
-  width: 13.65vw;
+  width: 9.6vh;
   background-color: white;
   font-size: 1em;
   color: #000000;
@@ -499,7 +513,7 @@ div.flexLinks a
 select#music, select#conversation
 {
   height: 2.5em;
-  width: 15.6vw;
+  width: 13.5vh;
   background-color: white;
   font-size: 1em;
   color: #000000;
