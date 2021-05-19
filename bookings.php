@@ -47,17 +47,25 @@ $phone = $_GET["phone"];
             {
                 while($row = $result->fetch_assoc())
                 {
-                    echo("Ditt Bokningsnummer: " . $row["id"] . "<br>" .
-                    "Din Startposition: " . $row["startPos"] . "<br>" .
-                    "Din Destination: " . $row["endPos"] . "<br>" .
-                    "Datum: " . $row["date"] . "<br>" .
-                    "Tid: " . $row["time"] . "<br>" .
-                    "Musik: " . $row["music"] . "<br>" .
-                    "Konversation: " . $row["conversation"] . "<br>" .
-                    "Ditt Namn: " . $row["name"] . "<br>" .
-                    "Ditt Mobilnummer: " . $row["phone"] . "<br>" 
-                    );
+                    ?> 
+                    <div class="bookingGrid">
 
+
+
+                    <?php
+                    echo("<div class='gridItems'>"."Ditt Bokningsnummer: " . "</div>". "<div class='gridValues'>". $row["id"] ."</div>" . 
+                    "<div class='gridItems'>"."Ditt Startposition: " . "</div>". "<div class='gridValues'>". $row["startPos"] ."</div>" .
+                    "<div class='gridItems'>"."Ditt Destination: " . "</div>". "<div class='gridValues'>". $row["endPos"] ."</div>" .
+                    "<div class='gridItems'>"."Datum: " . "</div>". "<div class='gridValues'>". $row["date"] ."</div>" . 
+                    "<div class='gridItems'>"."Tid: " . "</div>". "<div class='gridValues'>". $row["time"] ."</div>" . 
+                    "<div class='gridItems'>"."Musik: " . "</div>". "<div class='gridValues'>". $row["music"] ."</div>" .
+                    "<div class='gridItems'>"."Konversation: " . "</div>". "<div class='gridValues'>". $row["conversation"] ."</div>" . 
+                    "<div class='gridItems'>"."Ditt Namn: " . "</div>". "<div class='gridValues'>". $row["name"] ."</div>" . 
+                    "<div class='gridItems'>"."Ditt Mobilnummer: " . "</div>". "<div class='gridValues'>". $row["phone"] ."</div>" 
+                    );
+                    ?>
+                    </div>
+                    <?php
       
                     if(isset($_POST['deleteBooking'])) {
                         $query = "DELETE FROM bookingform WHERE id='$id' and phone='$phone'";

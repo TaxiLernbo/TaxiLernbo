@@ -218,7 +218,6 @@ input#time, input#date, input#phone, input#name, input#bookingNumber
   padding-right: 2vh;
 }
 
-
 select#music, select#conversation
 {
   height: 2.5em;
@@ -230,6 +229,25 @@ select#music, select#conversation
   border-radius: 0.5em;
   border: black solid;
   padding-right: 2vh;
+}
+
+.bookingGrid{
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 1em;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  grid-gap: 1em 1em;
+  background-color: #1864a3;
+}
+.gridItems{
+  grid-column: 1;
+  grid-row: auto;
+}
+.gridValues{
+  grid-column: 2;
+  grid-row: auto;
 }
 
 div#thankYouText

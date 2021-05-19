@@ -12,11 +12,10 @@ require_once("include/CApp.php");
 ?>
     <div class="content">
         <div id="main">
-            <h1> BOKNINGAR </h1>
             <div class="bookingFormBox">
                 <form  method="get" id="editBookingForm" action="bookings.php">
 
-                <label for="name">Ditt bokningsnummber och mobilnummer:</label><br/>
+                <label class="labelText" for="bookingNumber">Ditt bokningsnummber och mobilnummer:</label><br/>
                 <input type="text" id="bookingNumber" name="bookingNumber" placeholder="Bokningsnummer:"/>
 
                 <label for="phone"></label>
