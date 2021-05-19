@@ -196,16 +196,16 @@ input#startPos, input#endPos
   border: black solid;
 }
 
-input#bookingFormSubmit:focus, input#startPos:focus, input#endPos:focus, input#time:focus, input#date:focus, input#phone:focus, input#name:focus, select#music:focus, select#conversation:focus
+input#bookingFormSubmit:focus, input#startPos:focus, input#endPos:focus, input#time:focus, input#date:focus, input#phone:focus, input#name:focus, select#music:focus, select#conversation:focus, input#bookingNumber:focus
 {
   outline: none;
 }
-input#bookingFormSubmit:active, input#startPos:active, input#endPos:active, input#time:active, input#date:active, input#phone:active, input#name:active, select#music:active, select#conversation:active
+input#bookingFormSubmit:active, input#startPos:active, input#endPos:active, input#time:active, input#date:active, input#phone:active, input#name:active, select#music:active, select#conversation:active, input#bookingNumber:active
 {
   outline: none;
 }
 
-input#time, input#date, input#phone, input#name
+input#time, input#date, input#phone, input#name, input#bookingNumber
 {
   height: 2.5em;
   width: 13.65vw;
