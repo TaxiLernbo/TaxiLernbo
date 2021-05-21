@@ -50,8 +50,6 @@ $phone = $_GET["phone"];
                     ?> 
                     <div class="bookingGrid">
 
-
-
                     <?php
                     echo("<div class='gridItems'>"."Ditt Bokningsnummer: " . "</div>". "<div class='gridValues'>". $row["id"] ."</div>" . 
                     "<div class='gridItems'>"."Ditt Startposition: " . "</div>". "<div class='gridValues'>". $row["startPos"] ."</div>" .

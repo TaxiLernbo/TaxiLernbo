@@ -53,20 +53,20 @@ if(!empty($_POST))
                   </iframe><br/><br/>
 
                 <label for="startPos"></label>
-                <input required="required" type="text" id="startPos" name="startPos" placeholder="Start position:"/><br/><br/>
+                <input required="required" type="text" class="formOption" id="startPos" name="startPos" placeholder="Start position:"/><br/><br/>
                 
                 <label for="endPos"></label><br/>
-                <input required="required" type="text" id="endPos" name="endPos" placeholder="Slut destination:"/><br/><br/>
+                <input required="required" type="text" class="formOption" id="endPos" name="endPos" placeholder="Slut destination:"/><br/><br/>
 
                 <label for="date">Önskad tid:</label><br/>
-                <input type="date" id="date" name="date" value="<?php echo date('Y-m-d'); ?>"/>
+                <input type="date" class="formOption" id="date" name="date" value="<?php echo date('Y-m-d'); ?>"/>
 
                 <label for="time"></label>
-                <input type="time" id="time" name="time" value="<?php echo date('H:i'); ?>"/><br/><br/>
+                <input type="time" class="formOption" id="time" name="time" value="<?php echo date('H:i'); ?>"/><br/><br/>
                 
                 <label for="music">Musik och konversation:</label><br/>
 
-                <select id="music" name="music">
+                <select id="music" name="music" class="formOption">
                 <option value="ingen musik">ingen musik</option>
                 <option value="80-tal">80-tal</option>
                 <option value="90-tal">90-tal</option>
@@ -84,16 +84,16 @@ if(!empty($_POST))
                 <option value="Blandat">Blandat</option>
                 </select>
 
-                <select id="conversation" name="conversation">
+                <select id="conversation" name="conversation" class="formOption">
                 <option value="ingen konversation">ingen konversation</option>
                 <option value="konversation">konversation</option>
                 </select><br/><br/>
 
                 <label for="name">Ditt namn och mobilnummer:</label><br/>
-                <input required="required" type="text" id="name" name="name" placeholder="För och efternamn:"/>
+                <input required="required" type="text" class="formOption" id="name" name="name" placeholder="För och efternamn:"/>
 
                 <label for="phone"></label>
-                <input required="required" type="tel" id="phone" name="phone" placeholder="123-456-78-90" pattern="^(([+]46)\s*(7)|07)[02369]\s*(\d{4})\s*(\d{3})$"><br/><br/>
+                <input required="required" type="tel" class="formOption" id="phone" name="phone" placeholder="123-456-78-90" pattern="^(([+]46)\s*(7)|07)[02369]\s*(\d{4})\s*(\d{3})$"><br/><br/>
 
                 <input type="submit" id="bookingFormSubmit" value="Boka"/><br/><br/>
                 </form>
