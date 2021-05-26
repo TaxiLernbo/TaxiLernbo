@@ -75,7 +75,7 @@ iframe.iframe{
 	padding-top: 1.5em
 }
 .footerSections{
-	width: 27%;
+	width: 29%;
 	height: auto
 }
 #footerLogos{
@@ -266,8 +266,8 @@ p.bookedText{
 	display: flex;
 	flex-direction: column
 	}
-	.iframe{
-	width: 70vw;
+	.iframe.iframe{
+	width: 90%;
 	height: 20em
 	}
 	div.bookingFormBox{
