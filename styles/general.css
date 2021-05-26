@@ -75,7 +75,7 @@ iframe.iframe{
 	padding-top: 1.5em
 }
 .footerSections{
-	width: 29%;
+	width: 33%;
 	height: auto
 }
 #footerLogos{
@@ -310,7 +310,7 @@ p.bookedText{
 	}
 	.footerSections{
 	height: auto;
-	width: 33%
+	width: 29%
 	}
 	#footerLinks h5{
 	font-size: small
