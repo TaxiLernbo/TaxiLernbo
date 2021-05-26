@@ -245,7 +245,7 @@ p.bookedText{
 	.mobileMenu{
 	display: block;
 	height: 4em;
-	padding-left: 45vw;
+	padding-left: 47vw;
 	padding-top: 2.5em;
 	width: 100%;
 	background-color: #f9ff3e
@@ -410,5 +410,8 @@ p.bookedText{
 	border-radius: 0.5em;
 	border: black solid;
 	padding-right: 2vh
+	}
+	.rightNav a{
+		font-size: 1.15em;
 	}
 }
